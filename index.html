@@ -133,8 +133,8 @@
         </section>
 
         <!-- banner related all fruites -->
-        <section>
-          <div class="flex items-center gap-4 drop-shadow-xl p-5 bg-white max-w-4xl rounded-md -mt-24 relative left-44">
+        <section class="hidden lg:flex">
+          <div class="flex items-center gap-4 drop-shadow-xl p-5 bg-white max-w-4xl rounded-md lg:-mt-24 relative lg:left-44 mt-10">
             <div>
                 <div class="grid grid-cols-5 w-auto items-center justify-center gap-8">
                   <span><img src="./images/fruit1.png" alt=""></span>
@@ -143,7 +143,7 @@
                   <span><img src="./images/fruit4.png" alt=""></span>
                   <span><img src="./images/fruit5.png" alt=""></span>
                 </div>
-                <div class="grid grid-cols-5 w-auto items-center justify-center gap-x-24 text-2xl font-medium">
+                <div class="grid grid-cols-5 w-auto items-center justify-center lg:gap-x-24 lg:text-2xl font-medium text-sm gap-10">
                   <span>Strawberry</span>
                   <span>Strawberry</span>
                   <span>Mango</span>
@@ -162,12 +162,12 @@
 
       <!-- created deal fo the day -->
       <section class="max-w-screen-xl mx-auto mt-20">
-        <div class="flex">
+        <div class="lg:flex grid-cols-1">
           <div class="flex-1">
-            <h2 class="text-5xl font-semibold">Deal of the day</h2>
-            <p class="mt-8">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <h2 class="lg:text-left text-5xl font-semibold text-center">Deal of the day</h2>
+            <p class="lg:text-left mt-8 text-center mt-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
-          <div class="flex-1 flex justify-end">
+          <div class="flex-1 flex justify-end mt-6">
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
@@ -323,19 +323,47 @@
     <!-- created meet the team section -->
 
     <section class="max-w-screen-xl mx-auto mt-24">
-      <div class="">
+      <div class="hello">
         <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.569),rgba(0, 0, 0, 0.519)), url('./images/banner3.png');">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="p-20 pr-52">
-              <div class="ml-36">
-                <h1 class="mb-3 text-4xl font-bold text-center">Meet the team section</h1>
+            <div class="p-20 lg:pr-52">
+              <div class="lg:ml-36">
+                <h1 class="mb-3 text-4xl font-bold lg:text-center">Meet the team section</h1>
               <p class="mb-2 text-xs text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of <br>Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
-              <div class="grid grid-cols-1 lg:grid-cols-4 items-center justify-around gap-72">
+              <div class="grid grid-cols-1 lg:grid-cols-4 items-center justify-around lg:gap-72">
                 <div class="space-y-3 w-40">
                   <div class="flex items-center justify-center mt-6">
-                    <img src="./images/member1.png" alt="" class="">
+                    <img src="./images/member1.png" alt="" class=""
+                    
+                    
+            <button class="btn" onclick="my_modal_2.showModal()"></button>
+              <dialog id="my_modal_2" class="modal">
+                <form method="dialog" class="modal-box">
+                   <div class="card text-black p-5">
+                     <figure><img src="./images/fruit6.png"class="bg-[#F1F1F1] p-5 rounded-2xl" alt="Shoes" /></figure>
+                       <div class="card-body space-y-5 p-5">
+                         <h2 class="card-title text-2xl font-bold mt-3">Apples </h2>
+                         <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                          <div class="flex items-center justify-between">
+                          <h1 class="text-4xl font-black text-orange-400">$234</h1>
+                          <button type="button" class="py-3 px-6 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl text-white font-medium">
+                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                         </svg>
+                               BUY NOW
+                        </button>
+                 </div>
+            </div>
+         </div>
+       </form>
+          <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+                </form>
+                     </dialog>
+
+                    <!-- Open the modal using ID.showModal() method -->
                   </div>
                   <h3 class="text-xl font-bold">Awlad Hossain</h3>
                   <p>Fruits Expert</p>
@@ -391,7 +419,7 @@
       </div>
     </section>
 
-    <!-- created why choose part   -->
+    <!-- created why choose part-->
     <section class="mt-24 max-w-screen-xl mx-auto">
       <div>
         <h2 class="text-4xl font-bold text-center">Why Choose Us
@@ -400,9 +428,9 @@
       </div>
 
       <div>
-        <div class="footer p-10  text-base-content">
+        <div class="footer lg:p-10  text-base-content">
           <div>
-            <div class="flex items-center gap-4  p-5 w-96">
+            <div class="flex items-center gap-4  p-5 lg:w-96">
               <i class="fa-solid fa-user-group"></i>
                 <div>
                     <h3 class="text-3xl font-bold">Dedicated Team</h3>
@@ -410,7 +438,7 @@
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>  
             </div>
-            <div class="flex items-center gap-4  p-5 w-96">
+            <div class="flex items-center gap-4  p-5 lg:w-96">
               <i class="fa-solid fa-heart"></i>
                 <div>
                     <h3 class="text-3xl font-bold">Dedicated Team</h3>
@@ -418,7 +446,7 @@
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>  
             </div>
-            <div class="flex items-center gap-4  p-5 w-96">
+            <div class="flex items-center gap-4  p-5 lg:w-96">
               <i class="fa-solid fa-gift"></i>
                 <div>
                     <h3 class="text-3xl font-bold">Dedicated Team</h3>
@@ -439,7 +467,7 @@
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>  
             </div>
-            <div class="flex items-center gap-4  p-5 w-96">
+            <div class="flex items-center gap-4  p-5 lg:w-96">
               <i class="fa-solid fa-stethoscope"></i>
                 <div>
                     <h3 class="text-3xl font-bold">Dedicated Team</h3>
@@ -447,7 +475,7 @@
                     <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>  
             </div>
-            <div class="flex items-center gap-4  p-5 w-96">
+            <div class="flex items-center gap-4  p-5 lg:w-96">
               <i class="fa-solid fa-thumbs-up"></i>
                 <div>
                     <h3 class="text-3xl font-bold">Dedicated Team</h3>
@@ -469,7 +497,7 @@
             <span><img src="./images/logo.png" alt=""></span>
             <span class="text-4xl font-semibold">Fruit Burst</span>
           </div>
-          <div class="flex items-center justify-center gap-10 mt-5">
+          <div class="flex items-center justify-center lg:gap-10 gap-5 mt-5">
             <span>Home</span>
             <span>About Us</span>
             <span>Shop</span>
